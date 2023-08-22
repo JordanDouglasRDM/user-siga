@@ -15,25 +15,26 @@
         align-items: center;
         height: 100vh;
         margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .container {
         max-width: 350px;
         background: #F8F9FD;
         background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
-        border-radius: 40px;
         padding: 25px 35px;
         border: 5px solid rgb(255, 255, 255);
-        box-shadow: red 0px 30px 30px -20px;
-        margin: 100px 20px 20px 20px ;
+        box-shadow: #6D42BA 0px 30px 30px -20px;
+        margin: 40px 20px 20px 20px ;
         text-align: center;
     }
 
     .heading {
+        padding: 20px 45px;
         text-align: center;
         font-weight: 900;
         font-size: 30px;
-        color: red;
+        color: #6D42BA;
     }
 
     .form {
@@ -47,7 +48,8 @@
         padding: 15px 20px;
         border-radius: 20px;
         margin-top: 15px;
-        box-shadow: red 0px 5px 5px -5px;
+        margin-left: -22px;
+        box-shadow: #6D42BA 0px 5px 5px -5px;
         border-inline: 2px solid transparent;
     }
 
@@ -61,7 +63,7 @@
 
     .form .input:focus {
         outline: none;
-        border-inline: 2px solid red;
+        border-inline: 2px solid #6D42BA;
     }
 
     .form .forgot-password {
@@ -72,7 +74,7 @@
 
     .form .forgot-password a {
         font-size: 11px;
-        color: red;
+        color: #6D42BA;
         text-decoration: none;
     }
 
@@ -80,29 +82,28 @@
         display: block;
         width: 100%;
         font-weight: bold;
-        background: linear-gradient(45deg, red 0%, red 100%);
+        background: linear-gradient(45deg, #6D42BA 0%, #6D42BA 100%);
         color: white;
         padding-block: 15px;
         margin: 20px auto;
         border-radius: 20px;
-        box-shadow: red 0px 20px 10px -15px;
         border: none;
         transition: all 0.2s ease-in-out;
     }
 
     .form .login-button:hover {
         transform: scale(1.03);
-        box-shadow: red 0px 23px 10px -20px;
+        box-shadow: #6D42BA 0px 23px 10px -20px;
     }
 
     .form .login-button:active {
         transform: scale(0.95);
-        box-shadow:red 0px 15px 10px -10px;
+        box-shadow: #6D42BA 0px 15px 10px -10px;
     }
 
 </style>
 <div class="container">
-    <div class="heading">Informe seu acesso do Siga</div>
+    <div class="heading">Login SIGA</div>
     @isset($message)
         <div class="alert alert-success">
             {{ $message }}
